@@ -1,18 +1,11 @@
-# CDK Mixins
+# CDK Constructs
 
-Repo that includes some useful mixins to add to CDK deployments for quick and easy templates
+Repo that includes some useful constructs to add to CDK deployments
 
 ```bash
-yarn add catalysis-cdk-mixins
+yarn add @catalysis/constructs
 ```
 
 ```ts
-import * as Mixins from 'catalysis-cdk-mixins'
-
-...
-
-// Sample lambda function with logging, connected through api gateway
-// with code bucket
-new Mixins.ServerlessLambdaAPI(this)
-
+import * as Constructs from '@catalysis/constructs'
 ```

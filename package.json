@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.1",
   "name": "@catalysis/cdk-constructs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "run-compiled": "node dist/index.js",
     "clean-run": "npm run compile && clear && npm run run-compiled",
     "watch": "nodemon",
-    "deploy": "npm run compile && yarn publish"
+    "deploy": "npm run compile && yarn publish --access=public"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
