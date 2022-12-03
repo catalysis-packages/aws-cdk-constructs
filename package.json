@@ -1,12 +1,12 @@
 {
   "version": "0.0.6",
-  "name": "catalysis-cdk-mixins",
+  "name": "@catalysis/cdk-constructs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/catalysis-packages/aws-cdk-mixins"
+    "url": "https://github.com/catalysis-packages/aws-cdk-constructs"
   },
   "scripts": {
     "compile": "tsc",

@@ -1,5 +1,5 @@
-import { ServerlessLambdaAPI } from "./mixins/sls-lambda-api";
+import { CloudfrontS3Website } from "./constructs/cloudfront-s3";
 
 export {
-    ServerlessLambdaAPI
+    CloudfrontS3Website
 }
