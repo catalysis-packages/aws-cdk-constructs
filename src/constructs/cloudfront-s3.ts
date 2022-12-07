@@ -22,6 +22,12 @@ export class CloudfrontS3Website extends Construct {
             accessControl: BucketAccessControl.PRIVATE,
         })
 
+        // Logging bucket
+
+        const loggingBucket = new s3.Bucket(this, "logging-bucket", {
+            accessControl: BucketAccessControl.LOG_DELIVERY_WRITE,
+        })
+
 
         // Cloudfront distribution
 
@@ -35,7 +41,11 @@ export class CloudfrontS3Website extends Construct {
             defaultBehavior: {
                 origin: new origins.S3Origin(this.websiteBucket, {originAccessIdentity}),
             },
+            enableLogging: true,
+            logBucket: loggingBucket
         })
+
+
 
     }
 }
