@@ -1,5 +1,5 @@
 {
-  "version": "0.0.13",
+  "version": "0.0.14",
   "name": "@catalysis/cdk-constructs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,11 +27,11 @@
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^7.0.0",
-    "constructs": "^10.1.151"
+    "aws-cdk-lib": "7.0.0",
+    "constructs": "10.1.151"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.50.0",
-    "constructs": "^10.1.151"
+    "aws-cdk-lib": "7.0.0",
+    "constructs": "10.1.151"
   }
 }
